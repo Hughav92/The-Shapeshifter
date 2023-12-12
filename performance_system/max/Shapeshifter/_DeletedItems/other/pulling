@@ -1,0 +1,120 @@
+inlets = 6;
+outlets = 1;
+
+var scale = 0;
+var speed = 0;
+var bary = new Array(3);
+var goal = new Array(3);
+
+var goals = [1, 1, 1, 0, 1, -1, 0, 1, 0, -1, -1, 1, -1, 0, -1, -1]
+
+var distance_array = new Array(8);
+
+var mocap_logs_x = [];
+var mocap_logs_z = [];
+
+var no_rb = 0;
+
+var file_path = "../../mocap_logs/";
+
+var phase_num = 0;
+var cycle_num = 0;
+
+function list(msg){
+	if(inlet == 0){
+		for(var i = 0; i < arguments.length; i++){
+			bary[i] = arguments[i];
+			}
+		define_goal(bary);
+		outlet(0, goal);
+		}
+	}
+	
+function msg_float(a){
+	if(inlet == 1){
+		scale = a;
+		}
+	if(inlet == 2){
+		speed = a;
+		}
+	}
+	
+function msg_int(a){
+	if(inlet == 5){
+		no_rb = a;
+		}
+	if(inlet == 4){
+		phase_num = a;
+		}
+	if(inlet == 3){
+		cycle_num = a;
+		read_mocap_logs(cycle_num, phase_num, no_rb);
+		}
+	}
+		
+function bang(){
+	post(mocap_logs_x);
+	}
+	
+function define_goal(bary){
+	distance_array[0] = euclidean_distance_2d(bary[0], bary[2], goals[0], goals[1]);
+	distance_array[1] = euclidean_distance_2d(bary[0], bary[2], goals[2], goals[3]);
+	distance_array[2] = euclidean_distance_2d(bary[0], bary[2], goals[4], goals[5]);
+	distance_array[3] = euclidean_distance_2d(bary[0], bary[2], goals[6], goals[7]);
+	distance_array[4] = euclidean_distance_2d(bary[0], bary[2], goals[8], goals[9]);
+	distance_array[5] = euclidean_distance_2d(bary[0], bary[2], goals[10], goals[11]);
+	distance_array[6] = euclidean_distance_2d(bary[0], bary[2], goals[12], goals[13]);
+	distance_array[7] = euclidean_distance_2d(bary[0], bary[2], goals[14], goals[15]);
+	var max_dist = Math.max.apply(0, distance_array);
+	for(var i = 0; i < distance_array.length; i++){
+		if(distance_array[i] == max_dist){
+			goal[0] = goals[i*2]*scale;
+			goal[1] = bary[1];
+			goal[2] = goals[i*2+1]*scale;
+			}
+		}
+	}
+	
+function euclidean_distance_2d(x, y, xx, yy){
+	var x_dist = x-xx;
+	var y_dist = y-yy;
+	var x_sqr = Math.pow(x_dist, 2);
+	var y_sqr = Math.pow(y_dist, 2);
+	var sqr = x_sqr+y_sqr;
+	var euc_dist = Math.sqrt(sqr);
+	return euc_dist;
+	}
+
+function read_mocap_logs(cycle_num, phase_num, no_rb){
+	var mocap_logs_x = [];
+	//for(var i = 0; i < cycle_num*no_rb; i++){
+		//mocap_logs_x.push(new Array());
+		//}
+		
+	if(cycle_num > 1){
+		for(var cycle = 1; cycle <= cycle_num; cycle ++){
+			for(var rb = 1; rb <= no_rb; rb ++){
+				var cycle_string = "0" + String(cycle);
+				var phase_string = "0" + String(phase_num);
+				if(rb < 10){
+					var rb_string = "0" + String(rb);
+					}
+				else{
+					var rb_string = String(rb); 
+					}
+				var file_x = new File(file_path + cycle_string + "_" + phase_string + "_" + rb_string + "_x.csv");
+				post(file_path + cycle_string + "_" + phase_string + "_" + rb_string + "_x.csv");
+				var data_x = file_x.readstring(file_x.eof);
+				var rows_x = data_x.split("\n");
+				var cols_x = [];
+				for(var i = 0; i < rows_x.length; i++){
+					//var row_x = rows_x.split(",");
+					post(parseFloat(rows_x[0]))
+					var val_x = parseFloat(rows_x[0]);
+					cols_x.push(val_x)
+					}
+				mocap_logs_x.push(cols_x);
+				}
+			}
+		}
+	}

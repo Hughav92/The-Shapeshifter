@@ -1,0 +1,55 @@
+// Create a phase weighting vector fully weighted towards
+// a given phase. The phase weighting vector is output on
+// a bang.
+
+// Inlets
+// 0: Phase
+
+// Outlets
+// 0: Phase Weighting Vector fully weighted towards specified phase
+
+inlets = 1
+outlets = 1
+
+// Declare array for phase weighting vector
+var output = new Array(9);
+
+// Declare variable for phase
+// Working on array indices - zero indexed
+var phase = 0;
+
+function msg_int(a){
+
+	// If phase lower than 1, phase = 1
+	if(a < 1){
+		phase = 0;
+		}
+
+	// If phase greater than 9, phase = 9
+	else if(a > 9){
+		phase = 8;
+		}
+
+	// Else phase = phase
+	else{
+		phase = a - 1;
+		}
+
+	// Set values in output array
+	for(var i = 0; i < output.length; i++){
+		if(i == phase){
+			output[i] = 1.;
+			}
+		else{
+			output[i] = 0.;
+			}
+		}
+	}
+
+// Output on bang	
+function bang(){
+	outlet(0, output)
+	}
+
+
+	
