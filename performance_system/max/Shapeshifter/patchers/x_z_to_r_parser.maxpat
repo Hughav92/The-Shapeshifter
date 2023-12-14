@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1576.0, 82.0, 1981.0, 923.0 ],
+		"rect" : [ 34.0, 77.0, 1468.0, 865.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -5425,28 +5425,28 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "filepath_reader.maxpat",
-				"bootpath" : "~/Documents/MCT/Master Thesis/Repo/performance_system/max/Shapeshifter/patchers",
+				"bootpath" : "~/Documents/MCT/Master Thesis/Submission/the_shapeshifter_supplementary_materials/system_source_code/max/Shapeshifter/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mocap_reader.maxpat",
-				"bootpath" : "~/Documents/MCT/Master Thesis/Repo/performance_system/max/Shapeshifter/patchers",
+				"bootpath" : "~/Documents/MCT/Master Thesis/Submission/the_shapeshifter_supplementary_materials/system_source_code/max/Shapeshifter/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "output_router",
-				"bootpath" : "~/Documents/MCT/Master Thesis/Repo/performance_system/max/Shapeshifter/other",
+				"bootpath" : "~/Documents/MCT/Master Thesis/Submission/the_shapeshifter_supplementary_materials/system_source_code/max/Shapeshifter/other",
 				"patcherrelativepath" : "../other",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zero_trimmer",
-				"bootpath" : "~/Documents/MCT/Master Thesis/Repo/performance_system/max/Shapeshifter/other",
+				"bootpath" : "~/Documents/MCT/Master Thesis/Submission/the_shapeshifter_supplementary_materials/system_source_code/max/Shapeshifter/other",
 				"patcherrelativepath" : "../other",
 				"type" : "TEXT",
 				"implicit" : 1

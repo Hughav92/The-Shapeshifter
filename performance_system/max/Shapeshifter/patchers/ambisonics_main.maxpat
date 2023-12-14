@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1578.0, 85.0, 1981.0, 923.0 ],
+		"rect" : [ 34.0, 77.0, 1468.0, 865.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -201,7 +201,7 @@
 				"box" : 				{
 					"comment" : "Cycle Master 7",
 					"id" : "obj-80",
-					"index" : 8,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1420,7 +1420,7 @@
 				"box" : 				{
 					"comment" : "Decoded Signal 8",
 					"id" : "obj-188",
-					"index" : 8,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1432,7 +1432,7 @@
 				"box" : 				{
 					"comment" : "Decoded Signal 7",
 					"id" : "obj-189",
-					"index" : 7,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1444,7 +1444,7 @@
 				"box" : 				{
 					"comment" : "Decoded Signal 6",
 					"id" : "obj-190",
-					"index" : 6,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1456,7 +1456,7 @@
 				"box" : 				{
 					"comment" : "Decoded Signal 5",
 					"id" : "obj-191",
-					"index" : 5,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1468,7 +1468,7 @@
 				"box" : 				{
 					"comment" : "Decoded Signal 4",
 					"id" : "obj-186",
-					"index" : 4,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1480,7 +1480,7 @@
 				"box" : 				{
 					"comment" : "Decoded Signal 3",
 					"id" : "obj-187",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1492,7 +1492,7 @@
 				"box" : 				{
 					"comment" : "Decoded Signal 2",
 					"id" : "obj-185",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1504,7 +1504,7 @@
 				"box" : 				{
 					"comment" : "Decoded Signal 1",
 					"id" : "obj-184",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -2131,11 +2131,11 @@
 				"box" : 				{
 					"comment" : "Master",
 					"id" : "obj-1",
-					"index" : 9,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 2527.635747920444828, 1110.103640079498291, 30.0, 30.0 ]
 				}
 
@@ -2144,11 +2144,11 @@
 				"box" : 				{
 					"comment" : "Cycle Master 7",
 					"id" : "obj-162",
-					"index" : 7,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 1964.989018031528758, 498.69102144241333, 30.0, 30.0 ]
 				}
 
@@ -2157,11 +2157,11 @@
 				"box" : 				{
 					"comment" : "Cycle Master 6",
 					"id" : "obj-161",
-					"index" : 6,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 1649.989018031528758, 498.69102144241333, 30.0, 30.0 ]
 				}
 
@@ -2170,11 +2170,11 @@
 				"box" : 				{
 					"comment" : "Cycle Master 5",
 					"id" : "obj-160",
-					"index" : 5,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 1335.301518031528758, 498.69102144241333, 30.0, 30.0 ]
 				}
 
@@ -2183,11 +2183,11 @@
 				"box" : 				{
 					"comment" : "Cycle Master 4",
 					"id" : "obj-159",
-					"index" : 4,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 1020.176518031528758, 498.69102144241333, 30.0, 30.0 ]
 				}
 
@@ -2196,11 +2196,11 @@
 				"box" : 				{
 					"comment" : "Cycle Master 3",
 					"id" : "obj-158",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 705.051518031528758, 498.69102144241333, 30.0, 30.0 ]
 				}
 
@@ -2209,11 +2209,11 @@
 				"box" : 				{
 					"comment" : "Cycle Master 2",
 					"id" : "obj-157",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 389.551518031528758, 498.81602144241333, 30.0, 30.0 ]
 				}
 
@@ -2222,11 +2222,11 @@
 				"box" : 				{
 					"comment" : "Cycle Master 1",
 					"id" : "obj-156",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 74.551518031528758, 495.69102144241333, 30.0, 30.0 ]
 				}
 
@@ -5222,7 +5222,146 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "ambidecode~.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+				"name" : "ambiencode~.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+				"name" : "ambimonitor.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+				"name" : "filepath_reader.maxpat",
+				"bootpath" : "~/Documents/MCT/Master Thesis/Submission/the_shapeshifter_supplementary_materials/system_source_code/max/Shapeshifter/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "freq_list",
+				"bootpath" : "~/Documents/MCT/Master Thesis/Submission/the_shapeshifter_supplementary_materials/system_source_code/max/Shapeshifter/other",
+				"patcherrelativepath" : "../other",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "gain_list",
+				"bootpath" : "~/Documents/MCT/Master Thesis/Submission/the_shapeshifter_supplementary_materials/system_source_code/max/Shapeshifter/other",
+				"patcherrelativepath" : "../other",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "gran_reader.maxpat",
+				"bootpath" : "~/Documents/MCT/Master Thesis/Submission/the_shapeshifter_supplementary_materials/system_source_code/max/Shapeshifter/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "hoa.args.map.maxpat",
+				"bootpath" : "~/Documents/MCT/Master Thesis/Submission/the_shapeshifter_supplementary_materials/system_source_code/max/Shapeshifter/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "hoa.help.process.infos.maxpat",
+				"bootpath" : "~/Documents/MCT/Master Thesis/Submission/the_shapeshifter_supplementary_materials/system_source_code/max/Shapeshifter/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "hoa.in.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+				"name" : "hoa.in~.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+				"name" : "hoa.mode.sel.maxpat",
+				"bootpath" : "~/Documents/MCT/Master Thesis/Submission/the_shapeshifter_supplementary_materials/system_source_code/max/Shapeshifter/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "hoa.out~.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+				"name" : "hoa.process~.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+				"name" : "hoa.syn.grain~.maxpat",
+				"bootpath" : "~/Documents/MCT/Master Thesis/Submission/the_shapeshifter_supplementary_materials/system_source_code/max/Shapeshifter/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "hoa.thisprocess~.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+				"name" : "mocap_reader.maxpat",
+				"bootpath" : "~/Documents/MCT/Master Thesis/Submission/the_shapeshifter_supplementary_materials/system_source_code/max/Shapeshifter/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "output_router",
+				"bootpath" : "~/Documents/MCT/Master Thesis/Submission/the_shapeshifter_supplementary_materials/system_source_code/max/Shapeshifter/other",
+				"patcherrelativepath" : "../other",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "to_aed",
+				"bootpath" : "~/Documents/MCT/Master Thesis/Submission/the_shapeshifter_supplementary_materials/system_source_code/max/Shapeshifter/other",
+				"patcherrelativepath" : "../other",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "x_z_to_r_parser.maxpat",
+				"bootpath" : "~/Documents/MCT/Master Thesis/Submission/the_shapeshifter_supplementary_materials/system_source_code/max/Shapeshifter/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "x_z_to_theta_parser.maxpat",
+				"bootpath" : "~/Documents/MCT/Master Thesis/Submission/the_shapeshifter_supplementary_materials/system_source_code/max/Shapeshifter/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "y_axis_parser.maxpat",
+				"bootpath" : "~/Documents/MCT/Master Thesis/Submission/the_shapeshifter_supplementary_materials/system_source_code/max/Shapeshifter/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zero_trimmer",
+				"bootpath" : "~/Documents/MCT/Master Thesis/Submission/the_shapeshifter_supplementary_materials/system_source_code/max/Shapeshifter/other",
+				"patcherrelativepath" : "../other",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0
 	}
 
 }

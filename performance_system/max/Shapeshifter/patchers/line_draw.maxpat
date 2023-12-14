@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1707.0, 90.0, 986.0, 632.0 ],
+		"rect" : [ 219.0, 194.0, 988.0, 634.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -79,7 +79,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 548.0, 412.0, 150.0, 48.0 ],
+					"patching_rect" : [ 548.0, 412.0, 152.0, 48.0 ],
 					"text" : "Get length of position data to set dimension of jitter matrix"
 				}
 
@@ -801,7 +801,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "fifo",
-				"bootpath" : "~/Documents/MCT/Master Thesis/Repo/performance_system/max/Shapeshifter/other",
+				"bootpath" : "~/Documents/MCT/Master Thesis/Submission/the_shapeshifter_supplementary_materials/system_source_code/max/Shapeshifter/other",
 				"patcherrelativepath" : "../other",
 				"type" : "TEXT",
 				"implicit" : 1

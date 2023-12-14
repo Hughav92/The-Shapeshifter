@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 106.0, 640.0, 480.0 ],
+		"rect" : [ 34.0, 77.0, 1468.0, 865.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,77 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-68",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 900.737384438514709, 59.0, 150.0, 20.0 ],
+					"text" : "Enable"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-57",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 104.0, 59.0, 150.0, 20.0 ],
+					"text" : "Position Matrix"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-53",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 546.015151619911194, 561.787908434867859, 150.0, 34.0 ],
+					"presentation_linecount" : 2,
+					"text" : "Unpack from matrix and repack as x, y, z"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-34",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1577.015151619911194, 546.000027656555176, 150.0, 34.0 ],
+					"presentation_linecount" : 2,
+					"text" : "Unpack from matrix and repack as x, y, z"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-33",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 638.015151619911194, 112.0, 150.0, 62.0 ],
+					"text" : "Find marker centroid and scale outwards to get surrounding sphere for line endpoints"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 67.0, 14.0, 384.0, 20.0 ],
+					"text" : "Patch for drawing extention lines in phase 7 extending from marker"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-99",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -57,7 +128,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 559.818201303482056, 50.0, 50.5, 22.0 ],
+					"patching_rect" : [ 559.818201303482056, 108.0, 50.5, 22.0 ],
 					"text" : "jit.3m"
 				}
 
@@ -177,7 +248,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "float", "float", "float" ],
-					"patching_rect" : [ 559.818201303482056, 86.393935203552246, 67.0, 22.0 ],
+					"patching_rect" : [ 559.818201303482056, 144.393935203552246, 67.0, 22.0 ],
 					"text" : "unpack f f f"
 				}
 
@@ -652,32 +723,20 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-13",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 918.0, 99.0, 29.5, 22.0 ],
-					"text" : "0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "",
+					"comment" : "Enable",
 					"id" : "obj-2",
 					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 863.5, 50.0, 30.0, 30.0 ]
+					"patching_rect" : [ 863.5, 54.0, 30.0, 30.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "Position Matrix",
 					"id" : "obj-1",
 					"index" : 0,
 					"maxclass" : "inlet",
@@ -1471,14 +1530,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-118", 0 ],
-					"midpoints" : [ 927.5, 531.0, 874.515151619911194, 531.0 ],
-					"source" : [ "obj-13", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"midpoints" : [ 1094.515151619911194, 654.0, 1094.515151619911194, 654.0 ],
 					"source" : [ "obj-14", 0 ]
@@ -1520,7 +1571,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-63", 0 ],
-					"midpoints" : [ 873.0, 81.0, 873.0, 81.0 ],
+					"midpoints" : [ 873.0, 87.0, 873.0, 87.0 ],
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -3328,7 +3379,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-71", 0 ],
-					"midpoints" : [ 579.818201303482056, 75.0, 570.0, 75.0, 570.0, 81.0, 569.318201303482056, 81.0 ],
+					"midpoints" : [ 579.818201303482056, 132.0, 570.0, 132.0, 570.0, 138.0, 569.318201303482056, 138.0 ],
 					"source" : [ "obj-97", 1 ]
 				}
 
@@ -3408,7 +3459,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-97", 0 ],
-					"midpoints" : [ 171.0, 135.0, 546.0, 135.0, 546.0, 45.0, 569.318201303482056, 45.0 ],
+					"midpoints" : [ 171.0, 135.0, 546.0, 135.0, 546.0, 102.0, 569.318201303482056, 102.0 ],
 					"source" : [ "obj-99", 9 ]
 				}
 
@@ -3416,7 +3467,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "extention_line.maxpat",
-				"bootpath" : "~/Documents/MCT/Master Thesis/Repo/performance_system/max/Shapeshifter/patchers",
+				"bootpath" : "~/Documents/MCT/Master Thesis/Submission/the_shapeshifter_supplementary_materials/system_source_code/max/Shapeshifter/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

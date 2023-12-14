@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1832.0, 152.0, 1468.0, 781.0 ],
+		"rect" : [ -9.0, 114.0, 1470.0, 783.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -45,7 +45,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1276.0, 172.0, 150.0, 34.0 ],
+					"patching_rect" : [ 1276.0, 172.0, 153.0, 34.0 ],
 					"text" : "Flip along longitudinal axis to mirror capture volume"
 				}
 

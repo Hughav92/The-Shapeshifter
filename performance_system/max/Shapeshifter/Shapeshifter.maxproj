@@ -2,8 +2,8 @@
 	"name" : "Shapeshifter",
 	"version" : 1,
 	"creationdate" : 3761381163,
-	"modificationdate" : 3785236041,
-	"viewrect" : [ 529.0, 245.0, 292.0, 420.0 ],
+	"modificationdate" : 3785419704,
+	"viewrect" : [ 529.0, 271.0, 292.0, 394.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -21,6 +21,11 @@
 			}
 ,
 			"ambisonics_main.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"audio_main.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -51,11 +56,6 @@
 			}
 ,
 			"y_axis_parser.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"audio_main.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -338,6 +338,11 @@
 				"local" : 1
 			}
 ,
+			"list_pass" : 			{
+				"kind" : "file",
+				"local" : 1
+			}
+,
 			"output_router" : 			{
 				"kind" : "file",
 				"local" : 1
@@ -349,11 +354,6 @@
 			}
 ,
 			"zero_trimmer" : 			{
-				"kind" : "file",
-				"local" : 1
-			}
-,
-			"list_pass" : 			{
 				"kind" : "file",
 				"local" : 1
 			}
