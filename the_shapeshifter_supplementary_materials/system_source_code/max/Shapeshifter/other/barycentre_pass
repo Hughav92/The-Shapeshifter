@@ -1,0 +1,36 @@
+// Route a list of 3-dimensional coordinates
+// to a specified number of outputs (left to right)
+
+// Inlets
+// 0: List of 3-dimensional coordinates
+// 1: Number of outputs
+
+// Outlets
+// 0-29: List of 3-dimensional coordinates 
+
+inlets = 2;
+outlets = 30;
+
+// Declare variable for number of outputs
+var no_outputs = 0;
+
+// Declare array for coordinates
+var coords = new Array();
+
+// Set number of outputs
+function msg_int(a){
+		if (inlet == 1){
+		no_outputs = a;
+		}
+	}
+
+// Route coordinates to selected number of outputs
+function list(){
+	if (inlet == 0){
+		coords = arguments;
+		for(var i = 0; i < no_outputs; i++) {
+			outlet(i, coords[0], coords[1], coords[2]);
+			}
+		}
+	}
+			

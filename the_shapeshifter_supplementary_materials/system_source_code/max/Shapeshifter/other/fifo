@@ -1,0 +1,84 @@
+// Stores a stream of floats to an array.
+// Upon reception of a new float, the float is appended to the arary
+// and the object outputs the entire array When the array is full,
+// the first value is removed from the array. In effect, an array as a
+// stream. Bang resets the array and indice counts.
+
+// Inlets
+// 0: Float
+// 0: Bang - Reset
+
+// Outlets
+// 0: List of floats
+
+// Arguments
+// 0: Length of array (default 360)
+
+
+inlets = 1;
+outlets = 1;
+
+// Set length of array
+if(jsarguments.length > 1){
+	var array_length = jsarguments[1];
+	}
+else{
+	var array_length = 360;
+	}
+
+// Declare index counter variable	
+var counter = 0;
+
+// Declare counter for completion of index count
+var run_counter = 0;
+
+// Declare stream array	
+var output_array = new Array(array_length);
+
+
+function msg_float(a){
+
+	// Pass input to variable
+	var value = a;
+
+	// If array is not full
+	if(run_counter < 1){
+
+		// Set input value to array index
+		output_array[counter] = value;
+
+		// Output array up to current index
+		outlet(0, output_array.slice(0, counter));
+		}
+
+	// If array is full
+	if(run_counter > 0){
+
+		// Decrease index of all values in array
+		for(var i = 0; i < output_array.length - 1; i++){
+			output_array[i] = output_array[i+1];
+			}
+		
+		// Append input to array
+		output_array[array_length] = value;
+
+		// Output entire array
+		outlet(0, output_array.slice(0, array_length));
+		}
+
+	// Increase index counter
+	counter ++;
+
+	// If maximum index reached increase completion count
+	if(counter == array_length){
+		counter = 0;
+		run_counter ++;
+		}
+	}
+
+// Bang to reset object	
+function bang(){
+	output_array = [];
+	counter = 0;
+	run_counter = 0;
+	}

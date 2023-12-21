@@ -1,0 +1,48 @@
+// Trim extraneous zeros from the end of a packed list
+
+// Inlets
+// 0: List of values
+// 1: Number of position markers in performance
+
+// TODO: Implement for routing to multiple outputs
+
+// Outlets
+// 0: List with zeros trimmed
+
+inlets = 2;
+outlets = 1;
+
+// Declare variable for number of outputs
+var no_outputs = 0;
+
+// Set number of outputs
+function msg_int(a){
+	if(inlet == 1){
+		no_outputs = a;
+		}
+	}
+
+function list(msg){
+
+	// Declare variable for index beyond which to trim
+	var max_index = 0;
+
+	// Iterate through list and find highest index with non-zero
+	for(var i = 0; i < arguments.length; i++){
+		if(arguments[i] != 0){
+			max_index = i;
+			}
+		}
+
+	// Declare array for output
+	var output = [];
+
+	// Push list up to highest non-zero index to ouput array
+	for(var i = 0; i < max_index; i++){
+		output.push(arguments[i]);
+		}
+
+	// Output trimmed list
+	outlet(0, output);
+	}
+	
