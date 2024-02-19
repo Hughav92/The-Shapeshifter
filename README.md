@@ -10,17 +10,17 @@ patterns defined below.
 
 ## 1. Contents
 
-analysis_data (folder) - Extracted sinusoids and latency measurements from the evaluation of the system's motion to visual latency
-analysis_notebooks (folder) - The code for analysis of motion to visual system latency in several Jupyter Notebooks
-classifier_training (folder) - A Jupyter Notebook to train a classifier that for use in the performance system
-performance_system (folder) - Contains the source code for the performance system. This is primarily written in Max (with a small number of Javascript scripts for Max), 
+1. analysis_data (folder) - Extracted sinusoids and latency measurements from the evaluation of the system's motion to visual latency
+2. analysis_notebooks (folder) - The code for analysis of motion to visual system latency in several Jupyter Notebooks
+3. classifier_training (folder) - A Jupyter Notebook to train a classifier that for use in the performance system
+4. performance_system (folder) - Contains the source code for the performance system. This is primarily written in Max (with a small number of Javascript scripts for Max), 
 although there are also several Python scripts for core functionalities. The Max patchers are organised as a project, including several folders for the input/output files
 and parameter settings in text files.
-motive_assets (folder) - Contains rigid body data for the 30 rigid bodies that can be used in
+5. motive_assets (folder) - Contains rigid body data for the 30 rigid bodies that can be used in
 performance, both as individual files (if only a subset are to be used) and as a collected file
-motive_osc (folder) - Contains a modified version of the [NatNetClient SDK](https://optitrack.com/support/downloads/developer-tools.html#natnet-sdk)
+6. motive_osc (folder) - Contains a modified version of the [NatNetClient SDK](https://optitrack.com/support/downloads/developer-tools.html#natnet-sdk)
 which is used to stream rigid body position data in realtime from Motive. - TODO
-requirements (folder) - Contains a Jupyter Notebook that should be run to install all required
+7. requirements (folder) - Contains a Jupyter Notebook that should be run to install all required
 Python libraries. This should be done before all else.
 
 ### 1.1 Requirements
