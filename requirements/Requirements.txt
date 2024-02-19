@@ -1,0 +1,9 @@
+numpy
+osc4py3
+python-osc
+keyboard
+scipy
+fastdtw
+librosa
+soundfile
+scikit-maad
