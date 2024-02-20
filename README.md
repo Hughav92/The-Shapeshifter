@@ -42,6 +42,32 @@ The Max project requires the following packages:
 1. ICTS Ambisonics
 2. HoaLibrary
 
-# 3. Setting Up a Performance
+## 2. System Data Structure
 
-Instructions on how to run the system are included in the patcher 'main', which is the only patcher that needs to be run from the Max project. The Python scripts should also be running in the background, with the corresponding variables in object that runs in the main loop set to the requirements for the performance. The system assumes that the MoCap system in use is broadcasting rigid body position data over OSC to the computer running the Max projects and Python scripts on ports 37000 and 44000. The IP address of the computer needs to be set as the 'log_ip' attribute of the MoCap logger object in the main loop of Python script 02. The hardware setup for the performance is described in the thesis manuscript, avaliable [here](https://drive.google.com/file/d/1gkyzdBCqBgZmMgvKYMLVTJ-M8FwWhahq/view?usp=drive_link).
+The mocap data flow of the system is as follows:
+
+1. Rigid Body positional data is captured by motive and streamed in loopback
+using the broadcast function.
+2. OSCstream.py (to be added) dispatches the stream as OSC data to osc_parse Max patch and the mo_cap_logger.py script.
+3. The mocap data is processed by the Max project and Python scripts according to the current state of the system determined by the performance_synch.py script.
+
+The audio data flow of the system is as follows:
+
+1. The audio signal obtained through the performer's headworn microphone is logged by the audio_main Max patch.
+2. The logged signal is processed by the audio_processing_svm_weight_update.py script.
+3. The processed audio is output spatially by the ambisonics_main Max patch.
+
+## 3. Setting Up a Performance
+
+### 3.1. Important Notes
+
+1. Although preliminary tests have been done using WiFi and funtionality was maintained, it is best to
+have all machines connected to the same network via ethernet cable.
+2. Depending on the computer, higher numbers of rigid bodies might result in some slowdown, due to
+the amount of rendering required.
+3. The spatial output is currently configured for a circular 8 speaker array, with speakers located at equal positions
+along a radius. The centre of the circular array corrseponds to the origin of mocap capture volume on the horizontal plane.
+
+### 3.2 Setup
+
+Instructions on how to run the system are included in the patcher 'main', which is the only patcher that needs to be run from the Max project. The Python scripts should also be running in the background, with the corresponding variables in the class instances that run in the main loops set to the requirements for the performance. The system assumes that the MoCap system in use is broadcasting rigid body position data over OSC to the computer running the Max projects and Python scripts on ports 37000 and 44000. The IP address of the computer needs to be set as the 'log_ip' attribute of the MoCap logger object in the main loop of Python script 02. The hardware setup for the performance is described in the manuscript avaliable [here](https://drive.google.com/file/d/1gkyzdBCqBgZmMgvKYMLVTJ-M8FwWhahq/view?usp=drive_link).
