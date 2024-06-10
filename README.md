@@ -1,9 +1,9 @@
 # The Shapeshifter
 
 <p float="center">
-  <img src="/gifs/7c1.gif" width="300" />
-  <img src="/gifs/7c2.gif" width="300" /> 
-  <img src="/gifs/7c3.gif" width="300" />
+  <img src="/gifs/7c1.gif" width=width/3 />
+  <img src="/gifs/7c2.gif" width=width/3 /> 
+  <img src="/gifs/7c3.gif" width=width/3 />
 </p>
 
 This repository includes the performance system code, Jupyter Notebooks for analysis, Jupyter
