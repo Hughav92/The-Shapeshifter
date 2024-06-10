@@ -1,5 +1,11 @@
 # The Shapeshifter
 
+<p float="left">
+  <img src="/gifs/7c1.gif" width="100" />
+  <img src="/gifs/7c2.gif" width="100" /> 
+  <img src="/gifs/7c3.gif" width="100" />
+</p>
+
 This repository includes the performance system code, Jupyter Notebooks for analysis, Jupyter
 Notebook for training a classifier for the performance system, and OptiTrak Motive for the interactive
 performance system 'The Shapeshifter'. The system was developed on top of an Optitrack Motive motion
